@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "globalspeechtotext"
+version = "0.1.0"
+description = "Web app to transform audio into text from multiple audio formats and languages."
+authors = ["Daniel Arruda de Santana <santana.dahn@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.89.1"
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+python-multipart = "^0.0.5"
+SpeechRecognition = "^3.9.0"
+pydub = "^0.25.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
