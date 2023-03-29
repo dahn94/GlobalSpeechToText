@@ -29,11 +29,7 @@ def transcribe_each_audio_files_on_recognize_google(audios_file_path_dict):
                 full_transcription = full_transcription + transcription + '\n' + '\n'
     
     return full_transcription
-
-def transform_to_txt_file(full_transcription_str, name_file):
-    with open(f'textos/{name_file}.txt', 'w') as f:
-        f.write(full_transcription_str)
-    
+   
 def remove_audios_separados():
     dir = 'audios_separados'
     filelist = glob.glob(os.path.join(dir, "*"))
